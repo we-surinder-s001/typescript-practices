@@ -68,4 +68,4 @@ const func3 = (clothAllowed) => {
 // this is going to throw typescript an error:
 // func3(shirt2.isAllowedInOffice);
 // so we can overcome that with '!'
-func3(shirt.isAllowedInOffice);
+func3(shirt2.isAllowedInOffice);

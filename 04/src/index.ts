@@ -135,4 +135,4 @@ const func3 = (clothAllowed: boolean,): void => {
 
 // func3(shirt2.isAllowedInOffice);
 // so we can overcome that with '!'
-func3(shirt.isAllowedInOffice!);
+func3(shirt2.isAllowedInOffice!);
