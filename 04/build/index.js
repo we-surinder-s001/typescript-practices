@@ -51,3 +51,21 @@ const mango = {
     season: "summer"
 };
 console.log(mango);
+const shirt = {
+    name: "formal",
+    color: "blue"
+};
+const shirt2 = {
+    name: "formal",
+    color: "blue",
+    isAllowedInOffice: true
+};
+console.log(shirt, shirt2);
+// if i wanted to provide option perameter to a function as an argument:
+const func3 = (clothAllowed) => {
+    console.log(clothAllowed);
+};
+// this is going to throw typescript an error:
+// func3(shirt2.isAllowedInOffice);
+// so we can overcome that with '!'
+func3(shirt.isAllowedInOffice);

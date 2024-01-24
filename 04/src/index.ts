@@ -1,4 +1,5 @@
 // how can we define the type of a function:
+
 let func: (name: string) => string
 
 func = (name) => {
@@ -99,3 +100,39 @@ const mango: Mango = {
 }
 
 console.log(mango);
+
+// optional perameter:
+
+interface Shirt {
+    name: string,
+    color: string,
+}
+
+const shirt: Shirt = {
+    name: "formal",
+    color: "blue"
+}
+
+interface Shirt {
+    isAllowedInOffice?: boolean | null | undefined //this is optional perameter represented by '?'
+}
+
+const shirt2: Shirt = {
+    name: "formal",
+    color: "blue",
+    isAllowedInOffice: true
+}
+
+console.log(shirt, shirt2)
+
+// if i wanted to provide option perameter to a function as an argument:
+
+const func3 = (clothAllowed: boolean,): void => {
+    console.log(clothAllowed)
+}
+
+// this is going to throw typescript an error:
+
+// func3(shirt2.isAllowedInOffice);
+// so we can overcome that with '!'
+func3(shirt.isAllowedInOffice!);

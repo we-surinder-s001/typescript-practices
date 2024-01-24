@@ -30,3 +30,13 @@ interface Mango extends Fruits {
     season: string;
 }
 declare const mango: Mango;
+interface Shirt {
+    name: string;
+    color: string;
+}
+declare const shirt: Shirt;
+interface Shirt {
+    isAllowedInOffice?: boolean | null | undefined;
+}
+declare const shirt2: Shirt;
+declare const func3: (clothAllowed: boolean) => void;
